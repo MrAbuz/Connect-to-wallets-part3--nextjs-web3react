@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useWeb3React } from "@web3-react/core";
 import { InjectedConnector } from "@web3-react/injected-connector"; //we import this to connect to "metamask". too add other wallets support we'd import others
-import { abi } from "../constants/abi";
+import { abi } from "../constants/abi"; //the file and the folder we created for the abi
 import { ethers } from "ethers";
 //always remember that I have to yarn add everything that I add here after 'from'
 
@@ -37,7 +37,7 @@ export default function Home() {
   }
 
   //its active? then x : if not y
-  //the active comes from above and lets us know if we are connected
+  //the active comes from useWeb3React above and lets us know if we are connected
   return (
     <div>
       {active ? (

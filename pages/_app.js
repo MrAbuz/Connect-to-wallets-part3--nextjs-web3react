@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { Web3ReactProvider } from "@web3-react/core";
-import { Web3Provider } from "@ethersproject/providers"; //this is just a minimalist version of ethers, a way to get just the providers into here without importing ethers, and we'll see why in a sec
+import { Web3Provider } from "@ethersproject/providers"; //this is just a minimalist version of ethers, a way to get just the providers into here without importing ethers
 
 //this Web3Provider needs a getLibrary function in order to exist
 //this is the same as "function getLibrary(provider){}" btw, but js has a bunch of crazy different ways we can do things
